@@ -185,7 +185,7 @@ input[type="number"] {
     @apply lg:rotate-[0] lg:translate-x-[0] lg:translate-y-[0];
   }
   .activityCard {
-    @apply lg:pb-[1.66666666667vw];
+    @apply lg:pb-[1.66666666667vw] pb-[25px];
   }
   .activityCard .content {
     @apply flex flex-col  justify-end items-start   lg:h-full;
