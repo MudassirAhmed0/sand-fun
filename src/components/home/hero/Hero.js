@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = ({ arabic }) => {
   return (
-    <section>
+    <section id="homeSection">
       <div className="h-[98vh] relative flex items-end lg:pb-[unset] pb-[120px] lg:items-center justify-center ">
         <div className="atlwh_Full overflow-hidden flipped">
           <div className="atlwh_Full">
@@ -47,13 +47,13 @@ const Hero = ({ arabic }) => {
             >
               <Link
                 href="/"
-                className="py-[8px] px-[20px] sm:py-[12px] sm:px-[35px] block border border-[#F62D17] bg-[#F62D17] hover:border-white hover:bg-transparent transition-all duration-300 border100 lg:py-[1.171875vw] lg:px-[2.73588541667vw]"
+                className="py-[8px] px-[20px] sm:py-[12px] sm:px-[35px] block border border-[#F62D17] bg-[#F62D17] hover:border-white hover:bg-transparent transition-all duration-300 border100 lg:py-[1vw] lg:px-[2.73588541667vw]"
               >
                 {arabic ? "لوريم ايبسوم دولار " : "Pre register now"}
               </Link>
               <Link
                 href="/"
-                className="py-[8px] px-[20px] sm:py-[12px] sm:px-[35px] block border hover:border-[#F62D17] hover:bg-[#F62D17] border-white bg-transparent transition-all duration-300 border100 lg:py-[1.171875vw] lg:px-[2.73588541667vw]"
+                className="py-[8px] px-[20px] sm:py-[12px] sm:px-[35px] block border hover:border-[#F62D17] hover:bg-[#F62D17] border-white bg-transparent transition-all duration-300 border100 lg:py-[1vw] lg:px-[2.73588541667vw]"
               >
                 {arabic ? "لوريم ايبسوم" : "Exhibit 2024"}
               </Link>

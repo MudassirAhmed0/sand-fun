@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const About = ({ arabic }) => {
   return (
-    <section className="bg-[#1A1C1F] flex lg:justify-start justify-center">
+    <section
+      id="aboutSection"
+      className="bg-[#1A1C1F] flex lg:justify-start justify-center"
+    >
       <div className="lg:pt-[8.125vw] lg:pb-[unset] sm:py-[120px] py-[80px] relative lg:bottom-[-3.33333333333vw] lg:w-[92.9166666667vw] sm:w-[90%] w-[88%] flex flex-wrap items-center sm:gap-y-[30px] gap-y-[20px] lg:gap-x-[5.20833333333vw]">
         <div
           data-aos="fade"

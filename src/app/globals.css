@@ -118,7 +118,7 @@ input[type="number"] {
     @apply lg:text-[1.04166666667vw] lg:leading-[1.5625vw];
   }
   .text21 {
-    @apply lg:text-[1.09375vw] lg:leading-[1.30208333333vw];
+    @apply lg:text-[1.09375vw] lg:leading-[1.59208333333vw];
   }
   .text24 {
     @apply lg:text-[1.25vw] lg:leading-[1.51041666667vw];
@@ -355,6 +355,9 @@ input[type="number"] {
   transform: translateY(0);
   animation: top 0.7s infinite ease-in-out alternate-reverse;
 }
+.cardAniamte {
+  animation: top 1.4s infinite ease-in-out alternate-reverse;
+}
 
 .ltr .circle-container {
   @apply md:right-[2.08333333333vw]
@@ -390,6 +393,10 @@ input[type="number"] {
 @media (min-width: 1024px) {
 }
 
+#fixedHeader {
+  box-shadow: 0 14px 86px 0 rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 1024px) {
   /* HAMBURGER  */
   .menu {
@@ -397,6 +404,9 @@ input[type="number"] {
   }
   .menu span {
     @apply absolute bg-[#fff]  h-[0.5vw] w-full  left-0 transition-all duration-300;
+  }
+  #fixedHeader .menu span {
+    @apply bg-black;
   }
   .menu.active {
     top: 1px;
