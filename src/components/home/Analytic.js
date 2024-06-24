@@ -66,7 +66,7 @@ const Analytic = ({ analytic, index }) => {
       className="lg:w-[27.0833333333vw] sm:w-[40%] w-full flex justify-center bg-[#FFFFFF1A] border40 text-center lg:py-[2.734375vw] sm:py-[40px] py-[30px]"
     >
       <div className="lg:w-[22.9166666667vw] w-[87%]">
-        <span className="lg:text-[5vw] lg:leading-[5.88541666667vw] f900 text128">
+        <span className="lg:text-[5vw] lg:leading-[5.88541666667vw] f900 text128 count">
           {analytic.number}
         </span>
         <span className=" lg:text24 mtext16 f600 block lg:mt-[0.88541666666vw] mt-[7px]">

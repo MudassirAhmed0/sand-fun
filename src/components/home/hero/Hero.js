@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = ({ arabic }) => {
+  const princeText = `<span class='lg:inline-block hidden'> His royal highness</span> <span class='lg:hidden'>HRH </span> prince`;
   return (
     <section id="homeSection">
       <div className="h-[98vh] relative flex items-end lg:pb-[unset] pb-[120px] lg:items-center justify-center ">
@@ -10,6 +11,10 @@ const Hero = ({ arabic }) => {
           <div className="atlwh_Full">
             <span className="atlwh_Full heroFirstOverlay"></span>
             <div className="atlwh_Full">
+              {/* <img
+                src="/images/home/hero/hero.jpg"
+                className="atlwh_Full object-cover opacity-[0.7]"
+              /> */}
               <video
                 src="/videos/hero.mp4"
                 poster="/images/home/hero/hero.jpg"
@@ -65,16 +70,15 @@ const Hero = ({ arabic }) => {
             <div
               data-aos="fade"
               data-aos-delay="400"
-              className="flex justify-center items-end lg:pb-[1.77083333333vw] pb-[15px] relative lg:w-[22.0833333333vw] lg:h-[26.0416666667vw] w-[49%] h-[200px]"
+              className="flex justify-center items-end lg:pb-[1.77083333333vw] pb-[15px] relative lg:w-[22.0833333333vw] lg:h-[26.0416666667vw] w-[47%] h-[230px]"
             >
               <Image fill src="/images/home/hero/faisal.png" alt="faisal" />
               <div className="f500 top-[50px] lg:top-[unset] capitalize flex flex-col text-center lg:gap-y-[0.41666666666vw] items-center relative z-[2]">
-                <span className=" lg:text21 mtext14 text-white text-opacity-[0.8]">
-                  {arabic
-                    ? "لوريم ايبسوم دولار سيت أميت"
-                    : " His royal highness prince"}
-                </span>
-                <span className=" lg:text24 mtext16">
+                <span
+                  className=" lg:text21 mtext14 text-white text-opacity-[0.8]"
+                  dangerouslySetInnerHTML={{ __html: princeText }}
+                ></span>
+                <span className=" lg:text24 mtext16 max-w-[145px] lg:max-w-[unset]">
                   {arabic
                     ? "لوريم ايبسوم دولار سيت أميت"
                     : " Faisal Bin Bandar Al Saud"}
@@ -84,16 +88,15 @@ const Hero = ({ arabic }) => {
             <div
               data-aos="fade"
               data-aos-delay="600"
-              className="absolute lrf2 flex justify-center items-end lg:pb-[1.77083333333vw] pb-[15px] lg:w-[22.0833333333vw] lg:h-[26.0416666667vw] w-[49%] h-[200px]"
+              className="absolute lrf2 flex justify-center items-end lg:pb-[1.77083333333vw] pb-[15px] lg:w-[22.0833333333vw] lg:h-[26.0416666667vw] w-[47%] h-[230px]"
             >
               <Image fill src="/images/home/hero/sultan.png" alt="sultan" />
               <div className="f500 top-[50px] lg:top-[unset] capitalize flex flex-col text-center lg:gap-y-[0.41666666666vw] items-center relative z-[2]">
-                <span className=" lg:text21 mtext14 text-white text-opacity-[0.8]">
-                  {arabic
-                    ? "لوريم ايبسوم دولار سيت أميت"
-                    : " His royal highness prince"}
-                </span>
-                <span className=" lg:text24 mtext16">
+                <span
+                  className=" lg:text21 mtext14 text-white text-opacity-[0.8]"
+                  dangerouslySetInnerHTML={{ __html: princeText }}
+                ></span>
+                <span className=" lg:text24 mtext16 max-w-[145px] lg:max-w-[unset]">
                   {arabic
                     ? "لوريم ايبسوم دولار سيت أميت"
                     : " Sultan Bin Salman Bin Abdulaziz"}

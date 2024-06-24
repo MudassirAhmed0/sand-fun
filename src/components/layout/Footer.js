@@ -5,25 +5,25 @@ const socialHandles = [
   {
     img: "/images/icons/social/fb.svg",
     link: "https://www.facebook.com/",
-    alt: "fb",
+    alt: "fb"
   },
   {
     img: "/images/icons/social/twitter.svg",
     link: "https://www.facebook.com/",
-    alt: "twitter",
+    alt: "twitter"
   },
   {
     img: "/images/icons/social/linkedin.svg",
     link: "https://www.linkedin.com/",
-    alt: "linkedin",
+    alt: "linkedin"
   },
   {
     img: "/images/icons/social/insta.svg",
     link: "https://www.insta.com/",
-    alt: "insta",
-  },
+    alt: "insta"
+  }
 ];
-const Footer = () => {
+const Footer = ({ arabic }) => {
   return (
     <footer className="bg-[#1A1C1F]">
       <div className="Container1640">
@@ -47,13 +47,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-wrap gap-[6px] justify-center lg:gap-x-[0.2vw] lg:py-[1.015625vw] py-[10px] lg:text16 mtext14 text-center text-white">
-          <span>© 2024 Copyright www.sandnfun.com All Rights Reserved</span>
+          <span>
+            {arabic
+              ? "جميع الحقوق محفوظة. نادي الطيران السعودي @ 2024"
+              : "All Rights Reserved. Saudi Aviation Club @ 2024"}
+          </span>
           <a
             href="https://brackets-tech.com/"
             target="_blank"
-            className="f300 opacity_Hover"
+            className={`f300 opacity_Hover ${arabic ? "opacity-[0.7]" : ""}`}
           >
-            Developed by Brackets Technology
+            {arabic
+              ? "  |  تم تطويره بواسطة Brackets Technology"
+              : " Developed by Brackets Technology"}
           </a>
         </div>
       </div>

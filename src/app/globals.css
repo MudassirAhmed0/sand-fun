@@ -118,7 +118,7 @@ input[type="number"] {
     @apply lg:text-[1.04166666667vw] lg:leading-[1.5625vw];
   }
   .text21 {
-    @apply lg:text-[1.09375vw] lg:leading-[1.59208333333vw];
+    @apply lg:text-[1.09375vw] lg:leading-[1.79208333333vw];
   }
   .text24 {
     @apply lg:text-[1.25vw] lg:leading-[1.51041666667vw];
@@ -148,7 +148,7 @@ input[type="number"] {
     @apply text-[14px] leading-[21px];
   }
   .mtext16 {
-    @apply text-[16px] leading-[24px];
+    @apply text-[16px] leading-[26px];
   }
   .mtext18 {
     @apply text-[18px] leading-[27px];
