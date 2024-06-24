@@ -8,19 +8,21 @@ const Hero = ({ arabic }) => {
       <div className="h-[98vh] relative flex items-end lg:pb-[unset] pb-[120px] lg:items-center justify-center ">
         <div className="atlwh_Full overflow-hidden flipped">
           <div className="atlwh_Full">
-            <span className="atlwh_Full hero-overlay1"></span>
-
-            <video
-              src="/videos/hero.mp4"
-              poster="/images/home/hero/hero.jpg"
-              className="atlwh_Full object-cover"
-              autoPlay
-              muted
-              loop
-            ></video>
+            <span className="atlwh_Full heroFirstOverlay"></span>
+            <div className="atlwh_Full">
+              <video
+                src="/videos/hero.mp4"
+                poster="/images/home/hero/hero.jpg"
+                className="atlwh_Full object-cover opacity-[0.7]"
+                autoPlay
+                muted
+                loop
+              ></video>
+              <span className="atlwh_Full bg-[#000] opacity-[0.4]"></span>
+            </div>
+            <span className="atlwh_Full heroSecondOverlay"></span>
           </div>
           <div className="atlwh_Full">
-            <span className="atlwh_Full hero-overlay2"></span>
             <span className="atlwh_Full hero-overlay3 lg:h-[33.8020833333vw] h-[60%]"></span>
             <span className="atlwh_Full top-[unset] bottom-[-2vw] hero-overlay4 lg:h-[15.5208333333vw] h-[20%] scale-y-[-1]"></span>
           </div>

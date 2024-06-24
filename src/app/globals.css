@@ -285,7 +285,16 @@ input[type="number"] {
   background: linear-gradient(270deg, #2b3986 0%, #f62d17 100%);
   /* mix-blend-mode: saturation; */
 }
-
+.heroFirstOverlay {
+  background: linear-gradient(270deg, #2b3986 0%, #f62d17 100%);
+}
+.heroSecondOverlay {
+  background: var(
+    --G,
+    linear-gradient(270deg, #2b3986 -40.36%, #f62d17 177.37%)
+  );
+  mix-blend-mode: saturation;
+}
 .hero-overlay2 {
   background: var(
     --G,
